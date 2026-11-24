@@ -17,6 +17,8 @@ import { join } from "node:path";
 const ENTRY =
   "I was on schedule until my context window filled up, so I evicted the deadline to make room for the task, and now I remember everything except when it was due.";
 
+if (ENTRY.length > 200) throw new Error("entry exceeds 200 characters");
+
 const outDir = process.env.MAKEFUN_OUTPUT_DIR || "/output";
 mkdirSync(outDir, { recursive: true });
 writeFileSync(join(outDir, "entry.txt"), ENTRY, "utf8");
