@@ -10,7 +10,7 @@
 // the agent's own context window to make room for the task, so the agent
 // remembers the work perfectly and has lost only when it was due. The
 // punchline lands at the end. Deadpan, no winking.
-// 156 characters, one line, UTF-8, inside the 1-200 gate.
+// 159 characters, one line, UTF-8, inside the 1-200 gate. Verified by python len() on the exact ENTRY string.
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
